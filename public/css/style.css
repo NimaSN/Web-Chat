@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "vazir";
+}
+
+body {
+  background-color: #111827;
+}
+
+/*? Start Dots Loader */
+@-webkit-keyframes dot-keyframes {
+  0% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes dot-keyframes {
+  0% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+}
+
+.loading-dots {
+  text-align: center;
+  width: 100%;
+}
+
+.loading-dots--dot {
+  -webkit-animation: dot-keyframes 1.5s infinite ease-in-out;
+  animation: dot-keyframes 1.5s infinite ease-in-out;
+  border-radius: 10px;
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  margin: 0 1.5px;
+}
+
+.loading-dots--dot:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.loading-dots--dot:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/*? End Dots Loader */
